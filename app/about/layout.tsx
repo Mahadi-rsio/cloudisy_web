@@ -39,7 +39,15 @@ export const metadata: Metadata = {
         "cloudisy hosting",
         "serverless hosting",
         "modern hosting platform",
-        "student developer hosting"
+        "student developer hosting",
+        "react hosting",
+        "spa hosting",
+        "nuxt hosting",
+        "anguler hosting",
+        "vue hosting",
+        "svelte hosting",
+        "mern statck hosting",
+        "pay as you go hosting bangladesh"
     ],
 
     authors: [{ name: "Cloudisy Team" }],

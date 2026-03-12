@@ -13,6 +13,15 @@ export const metadata: Metadata = {
         canonical: '/',
     },
     keywords: [
+        "student developer hosting",
+        "react hosting",
+        "spa hosting",
+        "nuxt hosting",
+        "anguler hosting",
+        "vue hosting",
+        "svelte hosting",
+        "mern statck hosting",
+        "pay as you go hosting bangladesh",
 
         "cloudisy hosting", "cloudisy platform", "static website hosting", "nextjs hosting platform", "deploy nextjs app", "deploy static website", "git based hosting", "auto scaling hosting", "ci cd hosting platform", "developer hosting platform", "startup hosting platform", "modern web hosting platform", "fast website hosting", "vercel alternative hosting", "netlify alternative", "cheap hosting for students", "developer cloud hosting", "bangladesh hosting platform", "hosting for bangladesh developers", "hosting with bkash", "hosting with nagad", "hosting with upay", "student friendly hosting", "easy deploy hosting", "git deployment hosting", "cloud hosting for developers", "static site deployment", "nextjs deployment platform", "bangladesh developer hosting", "affordable cloud hosting",
 
