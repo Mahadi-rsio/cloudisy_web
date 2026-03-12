@@ -5,7 +5,7 @@ import { motion, AnimatePresence, useMotionValue, useTransform, useSpring } from
 import { getSession, signIn } from "@/lib/auth-client";
 import { toast } from "sonner";
 import { useRouter } from "next/navigation";
-import LoginLayout from "./layout";
+
 
 
 
@@ -270,7 +270,7 @@ export default function App() {
     const footerLinks: string[] = ["Privacy", "Security", "Help"];
 
     return (
-        <LoginLayout>
+        
             <div
                 className="min-h-screen w-full flex items-center justify-center relative overflow-hidden"
                 style={{ background: "linear-gradient(135deg, #0a0612 0%, #0d1117 50%, #050b18 100%)", fontFamily: "'DM Sans', sans-serif" }}
@@ -536,7 +536,7 @@ export default function App() {
                     </div>
                 </motion.div>
             </div>
-        </LoginLayout>
+        
     );
 }
 
