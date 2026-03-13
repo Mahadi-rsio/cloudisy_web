@@ -1,0 +1,19 @@
+# Cloudisy
+
+Cloudisy is a high-performance cloud hosting platform optimized for Bangladeshi developers. It specializes in seamless deployment for modern web frameworks like React and Next.js.
+
+## Core Features
+- **Framework Support**: Optimized for React, Next.js, and static sites.
+- **Deployment**: Git-integrated workflows and a dedicated CLI.
+- **Infrastructure**: Free SSL certificates and custom subdomains.
+- **Observability**: Real-time logs and deployment analytics.
+
+## Pricing & Payments
+- **Free Tier**: Available for hobbyists and students.
+- **Model**: Affordable "Pay-as-you-go" billing.
+- **Local Payments**: Native support for bKash, Nagad, and Upay.
+
+## Resources
+- Homepage: https://cloudisy.top
+- Documentation: https://cloudisy.top/docs
+- CLI Reference: https://cloudisy.top/docs/cli
