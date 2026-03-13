@@ -1,0 +1,32 @@
+:5173 {
+    # আপনার প্রোজেক্টের এবসোলিউট পাথ (Absolute Path) দিন
+    root * ./ 
+
+    # ১. স্ট্যাটিক ফাইল হ্যান্ডলিং (_next/static এর জন্য)
+    handle_path /_next/static/* {
+        root * ./.next/static
+        file_server
+    }
+
+    # ২. সরাসরি রুট বা পাবলিক ফাইল চেক করা (favicon, Logo.png ইত্যাদি)
+    # যদি ফাইলটি লোকাল ./public ফোল্ডারে থাকে, তবে সেটি সার্ভ করবে
+    @publicFiles {
+        file {
+            try_files ./public/{path} ./public/{path}.html
+        }
+    }
+    handle @publicFiles {
+        rewrite * /public/{path}
+        root * .
+        file_server
+    }
+
+    # ৩. বাকি সব রিকোয়েস্ট ব্যাকএন্ডে (Standalone Server) পাঠানো
+    handle {
+        reverse_proxy localhost:3000
+    }
+
+    encode gzip zstd
+    log
+}
+
