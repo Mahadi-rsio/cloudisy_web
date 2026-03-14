@@ -2,7 +2,7 @@ name: Deploy to VPS
 
 on:
   push:
-    branches: [main, master]
+    branches: [main,master]
 
 jobs:
   deploy:
@@ -12,22 +12,16 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v4
 
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v3
-        with:
-          version: 9
-
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: 22
-          cache: pnpm
 
       - name: Install dependencies
-        run: pnpm install --frozen-lockfile
+        run: npm install
 
       - name: Build project
-        run: pnpm build
+        run: npm run build
 
       # Upload files to VPS
       - name: Copy files to VPS
@@ -38,3 +32,4 @@ jobs:
           key: ${{ secrets.VPS_SSH_KEY }}
           source: ".next,package.json"
           target: "/home/${{ secrets.VPS_USER }}/root"
+
