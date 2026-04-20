@@ -1,3 +1,5 @@
+"use client"
+
 import { useSearchParams } from 'next/navigation';
 import { useState } from 'react'
 import { device } from '@/lib/auth-client'
