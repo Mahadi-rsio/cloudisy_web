@@ -6,6 +6,7 @@ import { randomUUID } from 'crypto';
 const JWKS_KEY = 'betterauth:jwks';
 
 export const jwtPlugin = jwt({
+
     adapter: {
         /**
          * Get all stored JWKs
@@ -58,7 +59,12 @@ export const jwtPlugin = jwt({
 
     jwt: {
         // Defined in your options as 7 days
-        expirationTime: '7d',
+        expirationTime: "30m",
+        definePayload: ({ user }) => {
+            return {
+                id: user.id,
+            }
+        }
     },
 });
 
