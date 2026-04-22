@@ -58,11 +58,12 @@ export const jwtPlugin = jwt({
     },
 
     jwt: {
-        // Defined in your options as 7 days
-        expirationTime: "30m",
+        // Defined in your options as 5 min
+        expirationTime: "5m",
         definePayload: ({ user }) => {
             return {
                 id: user.id,
+                name: user.name
             }
         }
     },
